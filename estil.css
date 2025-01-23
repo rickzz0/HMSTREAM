@@ -1,33 +1,99 @@
 body {
+    height: 1000px;
     font: normal 15pt arial;
-    background-color: rgb(0, 183, 255);
+    background-image:
+        url('fundo.jpg'),
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));  /* Gradiente escuro sobre a imagem */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; 
 }
 
 header {
+    padding: 40px;
     color: white;
     text-align: center;
-    font: normal 22pt arial;
-    text-align: center;
-}
-/*.memory p {
-}*/
-
-section {
-    background: rgba(0, 0, 0, 0.795);
-    width: 400px;
-    text-align: center;
+    font: normal 18pt verdana;
+    line-height: 70px;
 }
 
-div#res{
+.res{
     display: flex;
-    justify-content: right;  /* Alinha o botão horizontalmente */
-    align-items: center;      /* Alinha o botão verticalmente */
-    height: vh;  
-    font: normal 5px arial;   
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
 }
+
+.res p {
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    width: 350px;
+    height: 38px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.288);
+}
+
+input#email {
+    width: 400px;
+    height: 40px;
+    background-color: rgba(36, 35, 35, 0.706);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow:rgba(36, 35, 35, 0.706);
+}
+
+input#vms {
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    width: 120px;
+    background-color: rgba(8, 162, 245, 0.987);
+    font: normal 14pt arial;
+    cursor: pointer;
+}
+
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+.p1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.p2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal 12pt arial;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 1000px;
+}
+
+section {
+    background-color: #07a5f9; /* Cor de fundo para diferenciar */
+    flex: 1; /* Faz com que as seções ocupem o mesmo tamanho */
+    text-align: center;
+    border: 1px solid #ccc; /* Borda para visualização */
+    color: white;
+    height: 300px;
+    border-radius: 10px;
+    font-weight: bold;
 }

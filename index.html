@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HMFLIX.com</title>
     <link rel="stylesheet" href="estil.css">
 </head>
 <body>
     <header>
-        <h1>Filmes, séries e muito mais, sem limites</h1>
-        <div>A partir de R$ 31,90. Cancele quando quiser.</div>
-        <p>Quer assistir? informe seu email para criar ou reiniciar sua assinatura</p>
+        <h1>Filmes, séries e<br>muito mais, sem<br>limites</h1>
     </header>
-    <section>
-        <div>
-            <p>email</p>
-        </div>
-    </section>
-    <div id="res">
-        <input type="button" value="Vamos lá " onclick="vms()">
+
+    <div class="p1">
+        <p>A partir de R$ 31,90. Cancele quando quiser.</p>
     </div>
+
+    <div class="p2">
+        <p>Quer assistir? informe seu email para criar ou reiniciar sua assinatura</p>
+    </div>
+
+    <div class="res">
+        <input type="email" id="email" placeholder="Digite seu email">
+        <input  id="vms" type="button" value="Vamos lá >" onclick="vms()">
+    </div>
+
+    <div class="columns">
+        <section>Aproveite na TV</section>
+        <section>Assista no Computador</section>
+        <section>Baixe no Celular</section>
+        <section>Assista no Tablet</section>
+    </div>
+
     <footer>
         <p>&copy;HMFLIX</p>
     </footer>
