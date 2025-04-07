@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HMFLIX.com</title>
+    <title>HMFLIX</title>
     <link rel="stylesheet" href="estil.css">
 </head>
+
 <body>
+    <div class="container">
+        <select class="idioma">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+        </select>
+        <input class="sobre" id="sobre" type="button" value="Sobre" onclick="sobre()">
+        <input class="entrar" type="button" value="Entrar" onclick="entrar()">
+    </div>
+
     <header>
-        <h1>Filmes, séries e<br>muito mais, sem<br>limites</h1>
+        <h1>Assista a filmes, séries e<br>muito mais, com acesso ilimitado ao<br>melhor conteúdo em streaming!</h1>
     </header>
 
     <div class="p1">
@@ -16,7 +26,7 @@
     </div>
 
     <div class="p2">
-        <p>Quer assistir? informe seu email para criar ou reiniciar sua assinatura</p>
+        <p>Quer assistir? informe seu email para fazer a sua assinatura</p>
     </div>
 
     <div class="res">
@@ -24,16 +34,59 @@
         <input  id="vms" type="button" value="Vamos lá >" onclick="vms()">
     </div>
 
-    <div class="columns">
-        <section>Aproveite na TV</section>
-        <section>Assista no Computador</section>
-        <section>Baixe no Celular</section>
-        <section>Assista no Tablet</section>
+    <div class= "columns">
+        <section>
+            <h4 class="s1">Filmes imperdíveis</h4>
+            <p class="p3">Descubra filmes incríveis e<br>faça sua próxima maratona cinematográfica!</p>
+            <img src="Imgs/pipoca.png">
+        </section>
+
+        <section>
+            <h4 class="s2">Assista quando quiser</h4>
+            <p class="p4">Aproveite seu conteúdo<br>favorito a qualquer hora,<br> sem limitações!</p>
+            <img src="Imgs/tv.png">
+        </section>
+
+        <section>
+            <h4 class="s3">Diversão para a família</h4>
+            <p class="p5">Entretenimento para todos<br>os membros da familia, em<br>qualquer momento!</p>
+            <img src="/Imgs/controle.png">
+        </section>
+
+        <section>
+            <h4 class="s4">Lançamentos Semanais</h4>
+            <p class="p6">Descubra novos títulos e<br>filmes incríveis, com lançamentos fresquinhos<br>toda semana!</p>
+            <img src="Imgs/seta.png">
+        </section>
     </div>
 
-    <footer>
-        <p>&copy;HMFLIX</p>
-    </footer>
+    <div class="estreia">
+        <section class="filme">
+            <h1 class="titulo_estreia">Estreias que vão dar o que falar</h1>
+                <img src="Imgs/michael2.webp">
+            <img src="Imgs/nosferatus.webp">
+            <img src="Imgs/capitão_america.webp">
+            <img src="Imgs/percy.webp">
+            <img src="Imgs/comotreinarseudragao.jpg">
+            <img src="Imgs/avatar.jpg">
+            <div>
+                <input type="button" value="Assine Agora" onclick="entrar()">
+            </div>
+        </section>
+    </div>
+
+    <div class="creditos">
+        <section class="f">
+            <footer>
+                <p class="p7">&copy;HMFLIX</p>
+            </footer>
+            <p>Criado em 2025</p>
+            <p>Termos e Avisos de Privacidade</p>
+            <p>Envie-nos um Feedback</p>
+            <p>Ajuda</p>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,101 @@
+:root {
+    font-family: Segoe UI;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between; /* Distribui o conteúdo entre header, main e footer */
+    min-height: 100vh;
+    
+}
+
+header {
+    justify-items: center;
+    padding: 10px 0 0 0;
+}
+
+header h1{
+    padding-bottom: 20px;
+}
+
+header h2{
+    color: rgb(77, 120, 195);
+}
+
+.container {
+    max-width: 600px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.container h2 {
+    margin-left: 118px;
+    padding-bottom: 5px;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: column;
+    
+    background-image: linear-gradient(rgb(10, 120, 255), rgb(0, 48, 93));
+
+}
+
+footer h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre os itens */
+}
+
+footer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer .social-icons {
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+footer a {
+    display: inline-block;
+}
+
+footer img {
+    width: 24px; 
+    height: 24px;
+}

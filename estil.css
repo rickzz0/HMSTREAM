@@ -2,23 +2,80 @@ body {
     height: 1000px;
     font: normal 15pt arial;
     background-image:
-        url('fundo.jpg'),
+        url('Imgs/s.webp'),
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));  /* Gradiente escuro sobre a imagem */
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay; 
+    background-blend-mode: overlay;
+    margin: 0; /* Remove as margens padrão do body */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.idioma {
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font: normal 12pt arial;
+    margin-left: 1000px;
+    text-align: center;
+}
+
+option {
+    color: white;
+}
+
+.sobre {
+    font: normal 13pt arial;
+    color: white;
+    background-color: rgb(0, 152, 194);
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.sobre:hover {
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+.entrar {
+    font: normal 13pt arial;
+    color: white;
+    background-color: rgb(0, 152, 194);
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.entrar:hover {
+    background-color: rgba(0, 0, 0, 0.508);
 }
 
 header {
     padding: 40px;
     color: white;
     text-align: center;
-    font: normal 18pt verdana;
+    font: bold 18pt verdana;
     line-height: 70px;
 }
 
 .res{
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -40,28 +97,31 @@ input::placeholder {
 input#email {
     width: 400px;
     height: 40px;
-    background-color: rgba(36, 35, 35, 0.706);
+    background-color: rgba(19, 19, 19, 0.855);
     padding: 5px;
     border-radius: 5px;
     color: white;
+    font: normal 13pt arial;
     box-shadow:rgba(36, 35, 35, 0.706);
+    border: 1px solid rgba(255, 255, 255, 0.264);
 }
 
 input#vms {
-    height: 50px;
+    height: 55px;
+    color: white;
     display: flex;
     border-radius: 10px;
-    width: 120px;
-    background-color: rgba(8, 162, 245, 0.987);
+    box-shadow: 3px 3px 5px black;
+    border: none;
+    width: 140px;
+    background-color: rgb(0, 152, 194);
     font: normal 14pt arial;
     cursor: pointer;
+    transition: background-color 0.7s ease;
 }
 
-
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
+input#vms:hover {
+    background-color: rgb(8, 129, 194);
 }
 
 .p1{
@@ -80,20 +140,114 @@ footer {
     color: white;
 }
 
+.columns p {
+    font: normal 12pt arial;
+}
+
 .columns {
     display: flex;
     justify-content: center;
     gap: 15px;
     width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
 }
 
-section {
-    background-color: #07a5f9; /* Cor de fundo para diferenciar */
+.columns section {
+    background-image: linear-gradient(to right, rgb(0, 152, 194), rgb(0, 44, 90));
+    background-blend-mode: overlay;
     flex: 1; /* Faz com que as seções ocupem o mesmo tamanho */
     text-align: center;
-    border: 1px solid #ccc; /* Borda para visualização */
     color: white;
     height: 300px;
+    border: none;
+    box-shadow: 3px 3px 5px black;
     border-radius: 10px;
     font-weight: bold;
+    transition: transform 0.3s ease-out;
+}
+
+.columns section:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o mouse */
+}
+
+
+img {
+    height: 100px;
+    margin-top: 80px;
+    margin: 30px;
+}
+
+section.f {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+    color: rgb(233, 220, 220);
+    background-color: rgb(34, 34, 34);
+    font: normal 12pt arial;
+    padding: 20px;
+    transition: color 1.0s ease-in-out;
+}
+
+.p7 {
+    font-style: italic;
+
+}
+
+.f p:hover {
+    cursor: pointer;
+    color: rgb(8, 129, 194);
+}
+
+
+.estreia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.filme {
+    margin-top: 15px;
+    background-color: rgb(1, 7, 36);
+    color: rgba(255, 255, 255, 0.799);
+    text-align: center;
+    font: normal 20pt arial;
+    border: 5px solid rgba(0, 0, 0, 0.647);
+    border-radius: 5px;
+}
+
+.filme h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.filme img {
+    gap: 20px;
+    height: 190px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.filme input {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    height: 45px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    border: none;
+    width: 140px;
+    background-color: rgb(0, 152, 194);
+    font: normal 12pt arial;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filme input:hover {
+    background-color: black;
 }
